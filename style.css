@@ -1,0 +1,353 @@
+/* ESTILO GERAL*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body{
+    background-color: #fff;
+    height: 100vh;
+}
+
+.interface{
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+.flex{
+    display: flex;
+}
+.btn-comprar {
+    padding-top: 10%; /* Define o espaço superior */
+    display: flex; /* Transforma a div em um flex container */
+    align-items: center; /* Centraliza verticalmente os itens filhos */
+    justify-content: center; /* Centraliza horizontalmente os itens filhos */
+}
+
+.btn-comprar button {
+    padding: 10px 40px;
+    font-size: 18px;
+    font-weight: 600;
+    background-color: #ff6eca;
+    color: #000;
+    border: 0;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: .2s;
+}
+
+h2.titulo{
+    color: #000;
+    font-size: 38px;
+    text-align: center;
+    line-height: 1;
+}
+
+h2.titulo span{
+    color: #ff6eca;
+}
+
+button:hover, form .btn-enviar input:hover{
+    box-shadow: 0px 0px 8px #171a4a;
+    transform: scale(1.05);
+}
+
+/* ESTILO DO CABEÇALHO*/
+header{
+    padding: 0px 4%;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    background-color: #fff;
+}
+
+header .interface{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header a{
+    color: #5c5c5c;
+    text-decoration: none;
+    display: inline-block;
+    transition: .2s;
+}
+
+header nav.menu-desktop a:hover{
+    color: #000;
+    font-weight: 200;
+    transform: scale(1.05);
+}
+
+header nav ul{
+    list-style-type: none;
+}
+
+header nav.menu-desktop ul li{
+    display: inline-block;
+    padding: 0 40px;
+}
+
+body {
+}
+
+.btn-comprar button:hover{
+    box-shadow: 0px 0px 8px #ff61c2;
+    transform: scale(1.05);
+}
+
+/*ESTILO DO TOPO DO SITE*/
+section.topo-do-site{
+    padding: 40px 4%;
+}
+
+section.topo-do-site .flex{
+    align-items: center;
+    justify-content: center;
+    gap: 90px;
+}
+
+.topo-do-site h1{
+    color: #ffffff;
+    font-size: 42px;
+    line-height: 40px;
+}
+
+.topo-do-site .txt-topo-site h1 span{
+    color: #ff6eca;
+}
+
+.topo-do-site .txt-topo-site p{
+    color: #ffffff;
+    margin: 40px 0;
+}
+
+.topo-do-site .img-topo-site img{
+    position: relative;
+    animation: flutuar 2s ease-in-out infinite alternate;
+}
+
+@keyframes flutuar{
+    0%{
+        top: 0;
+    }
+    100%{
+        top: 30px;
+    }
+}
+/*ESTILO RAÇÕES BOX*/
+section.racoes{
+    padding: 40px 4%;
+}
+
+section.racoes .flex{
+    gap: 60px;
+}
+
+.racoes .racoes-box{
+    color: #000;
+    padding: 40px;
+    border-radius: 20px;
+    margin-top: 45px;
+    margin-bottom: 30px;
+    transition: .2s;
+    cursor: pointer;
+    text-align: center;
+}
+
+.racoes .racoes-box:hover{
+    transform: scale(1.05);
+    box-shadow: 0 0 20px #00000081;
+}
+
+.racoes .racoes-box i{
+    font-size: 70px;
+    color: #ff6eca;
+}
+
+.racoes .racoes-box h3{
+    font-size: 28px;
+    margin: 15px 0;
+}
+
+.btn-comprar button:hover{
+    box-shadow: 0px 0px 8px #ff6eca;
+    transform: scale(1.05);
+    align-content: center;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+.banho_tosa {
+    width: 0 auto; /* Defina a largura da sua div */
+    margin: 0 auto; /* Isso vai centralizar horizontalmente */
+}
+h3 {
+    text-align: center; /* Alinha o texto centralmente */
+}
+
+ /* Estilos da tabela */
+ table {
+    width: 0 auto; /* Define a largura da tabela */
+    margin: 0 auto;
+    border-collapse: collapse;
+    border: 2px solid #ff6eca;
+    font-family: Arial, sans-serif;
+  }
+  th, td {
+    border: 1px solid #ff6eca;
+    padding: 10px;
+    text-align: left;
+  }
+  th {
+    background-color: #ffb7e5;
+  }
+  tr:nth-child(even) {
+    background-color: #ffb7e5;
+  }
+  /* Estilos para destacar a linha selecionada */
+  .selected {
+    background-color: #ffb7e5 !important;
+  } 
+
+/*ESTILO BRINQUEDOS BOX*/
+section.brinquedos{
+    padding: 40px 4%;
+}
+
+section.brinquedos .flex{
+    gap: 60px;
+}
+
+.brinquedos .brinquedos-box{
+    color: #000;
+    padding: 40px;
+    border-radius: 20px;
+    margin-top: 45px;
+    margin-bottom: 30px;
+    transition: .2s;
+    cursor: pointer;
+    text-align: center;
+}
+
+.brinquedos .brinquedos-box:hover{
+    transform: scale(1.05);
+    box-shadow: 0 0 20px #00000081;
+}
+
+.briquedos .brinquedos-box i{
+    font-size: 70px;
+    color: #ff6eca;
+}
+
+.brinquedos .brinquedos-box h3{
+    font-size: 28px;
+    margin: 15px 0;
+}
+
+.btn-comprar button:hover{
+    box-shadow: 0px 0px 8px #ff6eca;
+    transform: scale(1.05);
+    align-content: center;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+.header-with-bg {
+    position: relative;
+    width: 100%;
+    height: 700px;
+    background-image: url('assets/fundo.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.header-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Cor escura semi-transparente */
+}
+
+
+
+.header-with-bg::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('assets/fundo.jpg'); /* Substitua pelo caminho da sua imagem escura */
+    background-size: cover;
+    background-position: center;
+    z-index: -1;
+}
+
+.menu-desktop {
+    background-color: rgba(0, 0, 0, 0.5); /* Cor de fundo escura com transparência */
+    padding: 30px 70px; /* Adicione espaçamento interno ao menu */
+    text-align: right;
+}
+
+.menu-desktop ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.menu-desktop ul li {
+    display: inline-block; /* Para que os itens do menu fiquem lado a lado */
+    margin-right: 20px; /* Espaçamento entre os itens do menu */
+}
+
+.menu-desktop ul li:last-child {
+    margin-right: 0; /* Remove o espaçamento direito do último item do menu */
+}
+
+.menu-desktop ul li a {
+    text-decoration: none;
+    color: #fff; /* Cor do texto */
+    font-size: 16px;
+    opacity: 0.8;
+    transition: opacity 0.3s ease;
+}
+
+.menu-desktop ul li a:hover {
+    opacity: 1;
+}
+
+.topo-do-site {
+    color: #fff; /* Cor do texto */
+    padding: 20px;
+}
+
+.interface {
+    position: relative;
+}
+
+.txt-topo-site {
+    justify-content: center; /* Centralizar horizontalmente */
+    align-items: center; /* Centralizar verticalmente */
+}
+
+.img-topo-site {
+    width: 50%; /* Largura da imagem */
+    float: right; /* Alinhar à direita */
+}
+
+
+
