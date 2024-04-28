@@ -264,6 +264,53 @@ section.brinquedos .flex{
 html{
     scroll-behavior: smooth;
 }
+
+/*ESTILO ROUPAS BOX*/
+section.roupas{
+    padding: 40px 4%;
+}
+
+section.roupas .flex{
+    gap: 60px;
+}
+
+.roupas .roupas-box{
+    color: #000;
+    padding: 40px;
+    border-radius: 20px;
+    margin-top: 45px;
+    margin-bottom: 30px;
+    transition: .2s;
+    cursor: pointer;
+    text-align: center;
+}
+
+.roupas .roupas-box:hover{
+    transform: scale(1.05);
+    box-shadow: 0 0 20px #00000081;
+}
+
+.roupas .roupas-box i{
+    font-size: 70px;
+    color: #ff6eca;
+}
+
+.roupas .roupas-box h3{
+    font-size: 28px;
+    margin: 15px 0;
+}
+
+.btn-comprar button:hover{
+    box-shadow: 0px 0px 8px #ff6eca;
+    transform: scale(1.05);
+    align-content: center;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+/*BG TOPO DO SITE*/
 .header-with-bg {
     position: relative;
     width: 100%;
@@ -349,5 +396,99 @@ html{
     float: right; /* Alinhar à direita */
 }
 
+/* ESTILO DO FORM DE CONTATO*/
+section.formulario{
+    padding: 80px 4%;
+}
+
+form{
+    max-width: 500px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 40px;
+}
+
+form input, form textarea{
+    width: 100%;
+    background-color: #40269625;
+    border: 0;
+    outline: 0;
+    padding: 20px 15px;
+    border-radius: 15px;
+    color: #000;
+    font: 18px;
+}
+
+form textarea{
+    resize: none;
+    max-width: 500px;
+}
+
+form .btn-enviar{
+    margin-top: 20px;
+    text-align: center;
+}
+
+form .btn-enviar input{
+    width: 120px;
+    background-color: #ff6eca;
+    color: #fff;
+    font-weight: 700;
+    cursor: pointer;
+    transition: .2s;
+}
+
+@media screen and (max-width: 1022px){
+
+    section.topo-do-site {
+        padding-top: 20px;
+    }
+}
+
+/*ESTILO RODAPÉ*/
+footer{
+    padding: 0px 4%;
+    box-shadow: 0 0 4px 10px #0000001e;
+    text-align: center;
+}
+
+footer .flex{
+    justify-content: space-between;
+}
+
+footer .line-footer{
+    padding: 0px 0;
+}
+
+.borda{
+    border-top: 2px solid #171a4a;
+}
+
+.btn-whatsapp button{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: none;
+    background-color: #00ff08;
+    font-size: 22px;
+    cursor: pointer;
+    margin: 0 5px;
+    transition: .2s;
+}
+
+footer .line-footer p i{
+    color: #00ff08;
+    font-size: 22px;
+}
+
+footer .line-footer p{
+    color: #fff;
+}
+.spacer {
+    height: 90px;
+}
 
 
