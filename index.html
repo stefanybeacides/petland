@@ -15,22 +15,6 @@
     <title>PetLand</title>
 </head>
 <body>
-
-    <script>
-        // Adicionando evento de clique para destacar a linha selecionada
-        var table = document.getElementById('myTable');
-        var rows = table.getElementsByTagName('tr');
-        for (var i = 0; i < rows.length; i++) {
-          rows[i].addEventListener('click', function() {
-            var current = document.getElementsByClassName('selected');
-            if (current.length > 0) {
-              current[0].classList.remove('selected');
-            }
-            this.classList.add('selected');
-          });
-        }
-      </script>
-
 <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 <script>
     // Tabela de valores
