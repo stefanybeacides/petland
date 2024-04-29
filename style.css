@@ -592,7 +592,7 @@ footer .line-footer p{
 }
 .redes-sociais {
     position: absolute;
-    bottom: 40px; /* Ajuste a distância do fundo conforme necessário */
+    bottom: 20px; /* Ajuste a distância do fundo conforme necessário */
     left: 50%; /* Centralize horizontalmente */
     transform: translateX(-50%); /* Corrija a centralização */
     display: flex; /* Usando flexbox */
@@ -604,7 +604,7 @@ footer .line-footer p{
 
 
 .texto {
-    margin-right: 20px; /* Espaçamento entre o texto e os ícones */
+    margin-right: 50px; /* Espaçamento entre o texto e os ícones */
     width: 50%; /* Defina a largura da div para 50% da largura da tela */
     text-align: center;
 }

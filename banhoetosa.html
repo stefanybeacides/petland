@@ -1,55 +1,59 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="description" content="Projeto desenvolvido para aula de HTML - ADS 1ºD - 2024.">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!--GOOGLE FONTS--> 
+    <!--GOOGLE FONTS-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
     <!--FIM GOOGLE FONTS-->
     <link rel="stylesheet" href="style.css">
     <link rel="icon" type="image/x-icon" href="assets/cao.ico">
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <title>PetLand</title>
 </head>
-<body>
-<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-<script>
-    // Tabela de valores
-    var tabelaValores = {
-        "Banho": {
-            "Pequeno": 50,
-            "Médio": 70,
-            "Grande": 100
-        },
-        "Banho + tosa higiênica": {
-            "Pequeno": 80,
-            "Médio": 100,
-            "Grande": 130
-        },
-        "Banho + tosa": {
-            "Pequeno": 110,
-            "Médio": 130,
-            "Grande": 160
-        },
-        "Tosa higiênica": {
-            "Pequeno": 30,
-            "Médio": 60,
-            "Grande": 90
-        },
-        "Tosa": {
-            "Pequeno": 60,
-            "Médio": 90,
-            "Grande": 120
-        }
-    };
 
-    function abrirModal() {
-        Swal.fire({
-            title: 'Escolha o serviço',
-            html: `
+<body>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script>
+        // Tabela de valores
+        var tabelaValores = {
+            "Banho": {
+                "Pequeno": 50,
+                "Médio": 70,
+                "Grande": 100
+            },
+            "Banho + tosa higiênica": {
+                "Pequeno": 80,
+                "Médio": 100,
+                "Grande": 130
+            },
+            "Banho + tosa": {
+                "Pequeno": 110,
+                "Médio": 130,
+                "Grande": 160
+            },
+            "Tosa higiênica": {
+                "Pequeno": 30,
+                "Médio": 60,
+                "Grande": 90
+            },
+            "Tosa": {
+                "Pequeno": 60,
+                "Médio": 90,
+                "Grande": 120
+            }
+        };
+
+        function abrirModal() {
+            Swal.fire({
+                title: 'Escolha o serviço',
+                html: `
                 <select id="Porte" class="swal2-select custom-select" style="width: 40%">
                     <option value="Pequeno">Porte pequeno</option>
                     <option value="Médio">Porte Médio</option>
@@ -75,65 +79,65 @@
                     <option value="Transferência">Transferência</option>
                 </select>
             `,
-            showCancelButton: true,
-            confirmButtonText: 'Selecionar',
-            cancelButtonText: 'Cancelar',
-            confirmButtonColor: "#ff6eca",
-            focusConfirm: false,
-            preConfirm: () => {
-                var porte = document.getElementById("Porte").value;
-                var servico = document.getElementById("Servico").value;
-                var nomePet = document.getElementById("NomePet").value;
-                var nomeTutor = document.getElementById("NomeTutor").value;
-                var contatoCelular = document.getElementById("ContatoCelular").value;
-                var email = document.getElementById("Email").value;
-                var dataHora = document.getElementById("DataHora").value;
-                var formaPagamento = document.getElementById("FormaPagamento").value;
-                
-                
-                if (!nomePet || !nomeTutor || !contatoCelular || !email || !dataHora || !formaPagamento) {
-        // Se algum campo estiver vazio, exiba uma mensagem de erro
-        alert("Todos os campos são obrigatórios!");
-        return;
-    }
-                // Aqui você pode fazer o que quiser com os dados
-                // Por exemplo, enviar para um servidor via AJAX ou exibir em um modal de confirmação
-                mostrarDadosConfirmacao(porte, servico, nomePet, nomeTutor, contatoCelular, email, dataHora, formaPagamento);
+                showCancelButton: true,
+                confirmButtonText: 'Selecionar',
+                cancelButtonText: 'Cancelar',
+                confirmButtonColor: "#ff6eca",
+                focusConfirm: false,
+                preConfirm: () => {
+                    var porte = document.getElementById("Porte").value;
+                    var servico = document.getElementById("Servico").value;
+                    var nomePet = document.getElementById("NomePet").value;
+                    var nomeTutor = document.getElementById("NomeTutor").value;
+                    var contatoCelular = document.getElementById("ContatoCelular").value;
+                    var email = document.getElementById("Email").value;
+                    var dataHora = document.getElementById("DataHora").value;
+                    var formaPagamento = document.getElementById("FormaPagamento").value;
+
+
+                    if (!nomePet || !nomeTutor || !contatoCelular || !email || !dataHora || !formaPagamento) {
+                        // Se algum campo estiver vazio, exiba uma mensagem de erro
+                        alert("Todos os campos são obrigatórios!");
+                        return;
+                    }
+                    // Aqui você pode fazer o que quiser com os dados
+                    // Por exemplo, enviar para um servidor via AJAX ou exibir em um modal de confirmação
+                    mostrarDadosConfirmacao(porte, servico, nomePet, nomeTutor, contatoCelular, email, dataHora, formaPagamento);
+                }
+            });
+        }
+
+        function mostrarDadosConfirmacao(porte, servico, nomePet, nomeTutor, contatoCelular, email, dataHora, formaPagamento) {
+            var valorServico = tabelaValores[servico][porte];
+            var dadosFormulario = {
+                nome_pet: nomePet,
+                nome_tutor: nomeTutor,
+                contato_celular: contatoCelular,
+                email: email,
+                data_hora: dataHora,
+                forma_pagamento: formaPagamento,
+                porte: porte,
+                servico: servico,
+                valor_servico: tabelaValores[servico][porte]
+            };
+            // Obter a data e hora atual
+            var dataAtual = new Date();
+            var dataSelecionada = new Date(dataHora);
+
+            // Verificar se a data selecionada é maior que a data atual
+            if (dataSelecionada <= dataAtual) {
+                // Se a data selecionada for menor ou igual à data atual, exiba uma mensagem de erro
+                Swal.fire({
+                    title: 'Erro!',
+                    text: 'Por favor, selecione uma data futura para agendar.',
+                    icon: 'error',
+                    confirmButtonText: 'OK'
+                });
+                return;
             }
-        });
-    }
-
-    function mostrarDadosConfirmacao(porte, servico, nomePet, nomeTutor, contatoCelular, email, dataHora, formaPagamento) {
-        var valorServico = tabelaValores[servico][porte];
-        var dadosFormulario = {
-                    nome_pet: nomePet,
-                    nome_tutor: nomeTutor,
-                    contato_celular: contatoCelular,
-                    email: email,
-                    data_hora: dataHora,
-                    forma_pagamento: formaPagamento,
-                    porte: porte,
-                    servico: servico,
-                    valor_servico: tabelaValores[servico][porte]
-                };
-                   // Obter a data e hora atual
-    var dataAtual = new Date();
-    var dataSelecionada = new Date(dataHora);
-
-    // Verificar se a data selecionada é maior que a data atual
-    if (dataSelecionada <= dataAtual) {
-        // Se a data selecionada for menor ou igual à data atual, exiba uma mensagem de erro
-        Swal.fire({
-            title: 'Erro!',
-            text: 'Por favor, selecione uma data futura para agendar.',
-            icon: 'error',
-            confirmButtonText: 'OK'
-        });
-        return;
-    }
-        Swal.fire({
-            title: 'Confirmação de dados',
-            html: `
+            Swal.fire({
+                title: 'Confirmação de dados',
+                html: `
                 <p><strong>Serviço:</strong> ${servico}</p>
                 <p><strong>Porte:</strong> ${porte}</p>
                 <p><strong>Valor do Serviço:</strong> R$ ${valorServico.toFixed(2)}</p>
@@ -144,66 +148,66 @@
                 <p><strong>Dia e horário:</strong> ${dataHora}</p>
                 <p><strong>Forma de pagamento:</strong> ${formaPagamento}</p>
             `,
-            icon: 'info',
-        showCancelButton: true,
-        confirmButtonText: 'Realizar Pagamento',
-        confirmButtonColor: "#ff6eca",
-        cancelButtonText: 'Cancelar',
-        focusConfirm: false,
-        preConfirm: (formaPagamento) => {
-            if (formaPagamento === "Dinheiro") {
-                // Redirecionar para o Mercado Pago
-                enviarFormulario(dadosFormulario);
-                        } else {
-                            enviarFormulario(dadosFormulario);
-                            redirecionarParaMercadoPago();                
-            }
+                icon: 'info',
+                showCancelButton: true,
+                confirmButtonText: 'Realizar Pagamento',
+                confirmButtonColor: "#ff6eca",
+                cancelButtonText: 'Cancelar',
+                focusConfirm: false,
+                preConfirm: (formaPagamento) => {
+                    if (formaPagamento === "Dinheiro") {
+                        // Redirecionar para o Mercado Pago
+                        enviarFormulario(dadosFormulario);
+                    } else {
+                        enviarFormulario(dadosFormulario);
+                        redirecionarParaMercadoPago();
+                    }
+                }
+            });
         }
-    });
-}
-function redirecionarParaMercadoPago() {
-    // URL do Mercado Pago
-    var urlMercadoPago = 'https://link.mercadopago.com.br/petstoreland';
+        function redirecionarParaMercadoPago() {
+            // URL do Mercado Pago
+            var urlMercadoPago = 'https://link.mercadopago.com.br/petstoreland';
 
-    // Abrir a URL em uma nova janela
-    window.open(urlMercadoPago);
-}
-    function enviarFormulario(dadosFormulario) {
-        // URL do endpoint do FormsPree
-        var url = 'https://formspree.io/f/mdoqbnrk';
+            // Abrir a URL em uma nova janela
+            window.open(urlMercadoPago);
+        }
+        function enviarFormulario(dadosFormulario) {
+            // URL do endpoint do FormsPree
+            var url = 'https://formspree.io/f/mdoqbnrk';
 
-        // Configurar a requisição AJAX
-        var xhr = new XMLHttpRequest();
-        xhr.open('POST', url, true);
-        xhr.setRequestHeader('Content-Type', 'application/json');
-        xhr.onload = function() {
-            if (xhr.status === 200) {
-                // Se a requisição foi bem-sucedida, exiba uma mensagem de sucesso
-                Swal.fire({
-                    title: 'Agendamento enviado!',
-                    text: 'Seu agendamento foi enviado com sucesso.',
-                    icon: 'success',
-                    showConfirmButton: false,
-                    timer: 1500
-                });
-            } else {
-                // Se a requisição falhou, exiba uma mensagem de erro
-                Swal.fire({
-                    title: 'Erro ao enviar agendamento!',
-                    text: 'Ocorreu um erro ao enviar o agendamento. Por favor, tente novamente mais tarde.',
-                    icon: 'error',
-                    showConfirmButton: false,
-                    timer: 1500
-                });
-            }
-        };
+            // Configurar a requisição AJAX
+            var xhr = new XMLHttpRequest();
+            xhr.open('POST', url, true);
+            xhr.setRequestHeader('Content-Type', 'application/json');
+            xhr.onload = function () {
+                if (xhr.status === 200) {
+                    // Se a requisição foi bem-sucedida, exiba uma mensagem de sucesso
+                    Swal.fire({
+                        title: 'Agendamento enviado!',
+                        text: 'Seu agendamento foi enviado com sucesso.',
+                        icon: 'success',
+                        showConfirmButton: false,
+                        timer: 1500
+                    });
+                } else {
+                    // Se a requisição falhou, exiba uma mensagem de erro
+                    Swal.fire({
+                        title: 'Erro ao enviar agendamento!',
+                        text: 'Ocorreu um erro ao enviar o agendamento. Por favor, tente novamente mais tarde.',
+                        icon: 'error',
+                        showConfirmButton: false,
+                        timer: 1500
+                    });
+                }
+            };
 
-        // Enviar os dados do formulário como JSON
-        xhr.send(JSON.stringify(dadosFormulario));
-    }
-</script>
-<div class="header-with-bg">
-    <div class="header-overlay"></div> <!-- Sobreposição escura -->
+            // Enviar os dados do formulário como JSON
+            xhr.send(JSON.stringify(dadosFormulario));
+        }
+    </script>
+    <div class="header-with-bg">
+        <div class="header-overlay"></div> <!-- Sobreposição escura -->
         <nav class="menu-desktop">
             <ul>
                 <li><a class="smooth-scroll" href="index.html">Início</a></li>
@@ -215,28 +219,28 @@ function redirecionarParaMercadoPago() {
                 <li><a class="smooth-scroll" href="contato.html">Contato</a></li>
             </ul>
         </nav><!--fim menu-desktop-->
-    <section class="topo-do-site" id="topo-do-site">
-        <div class="interface">
-            <div class="flex">
-                <div class="txt-topo-site">
-                    <h1>PET <span>LAND</span></h1>
-                    <p>A melhor escolha para cuidar e mimar o seu pet!</p>
-                    <p>Realize um agendamento clicando no botão abaixo.</p>
-                    <div style="padding-top: 10%" class="btn-comprar"> 
-                        <a href="#banhotosa">
-                            <button class="button">Valores e Serviços</button>
-                        </a>
-                    </div><!--fim btn-comprar-->
-                </div><!--fim txt-topo-site-->
-            </div><!--fim flex-->
-        </div><!--fim interface-->
-    </section><!--fim topo-do-site-->
-</div>
-<main>
+        <section class="topo-do-site" id="topo-do-site">
+            <div class="interface">
+                <div class="flex">
+                    <div class="txt-topo-site">
+                        <h1>PET <span>LAND</span></h1>
+                        <p>A melhor escolha para cuidar e mimar o seu pet!</p>
+                        <p>Realize um agendamento clicando no botão abaixo.</p>
+                        <div style="padding-top: 10%" class="btn-comprar">
+                            <a href="#banhotosa">
+                                <button class="button">Valores e Serviços</button>
+                            </a>
+                        </div><!--fim btn-comprar-->
+                    </div><!--fim txt-topo-site-->
+                </div><!--fim flex-->
+            </div><!--fim interface-->
+        </section><!--fim topo-do-site-->
+    </div>
+    <main>
         <section class="banhotosa">
-            <div  class="interface">
+            <div class="interface">
                 <br>
-                <h2  id="banhotosa" class="titulo">BANHO E TOSA</h2>
+                <h2 id="banhotosa" class="titulo">BANHO E TOSA</h2>
                 <div class="flex">
                     <div class="banho_tosa">
                         <h3>Modalidades e valores</h3><br>
@@ -281,7 +285,7 @@ function redirecionarParaMercadoPago() {
                                 <td>R$ 120,00</td>
                             </tr>
                         </table>
-                          <div style="padding-top: 10%" class="btn-comprar"> 
+                        <div style="padding-top: 10%" class="btn-comprar">
                             <a>
                                 <button onclick="abrirModal()" class="button">Agende</button><br><br><br><br>
                             </a>
@@ -289,31 +293,34 @@ function redirecionarParaMercadoPago() {
                     </div><!--fim tabela banho e tosa-->
                 </div>
             </div>
-                                            <section class="formulario">
-                                                <section id="contato"></section><!--ADICIONADO AGORA-->
-                                                <div class="interface">
-                                                    <h2 class="titulo">FALE <span>CONOSCO.</span></h2>
-                                                    <form action="https://formspree.io/f/xoqglkrk" method="post">
-                                                        <input type="text" name="Nome: " id="" placeholder="Seu nome completo:" required>
-                                                        <input type="text" name="E-mail: " id="" placeholder="Seu e-mail:" required>
-                                                        <input type="text" name="Celular: " id="" placeholder="Seu celular:">
-                                                        <textarea name="" id="Mensagem: " placeholder="Sua mensagem" required></textarea>
-                                                        <div class="btn-enviar"><input type="submit" value="ENVIAR"></div>
-                                                    </form>
-                                                </div><!--fim interface-->
-                                            </section><!--fim formulario-->
-                                            <footer>
-                                                <div class="footer-content">
-                                                  <p>Copyright © 2024 - All Rights Reserved.</p>
-                                                </div>
-                                                <link rel="stylesheet" href="https://cdn.positus.global/production/resources/robbu/whatsapp-button/whatsapp-button.css">
-                                        <a id="robbu-whatsapp-button" class="right" target="_blank" href="https://api.whatsapp.com/send?phone=5511951923644">
-                                          <div class="rwb-tooltip">Entre em contato!</div>
-                                          <img src="https://cdn.positus.global/production/resources/robbu/whatsapp-button/whatsapp-icon.svg">
-                                        </a>
-                                              </footer>
- 
-                                              </section>
+            <section class="formulario">
+                <section id="contato"></section><!--ADICIONADO AGORA-->
+                <div class="interface">
+                    <h2 class="titulo">FALE <span>CONOSCO.</span></h2>
+                    <form action="https://formspree.io/f/xoqglkrk" method="post">
+                        <input type="text" name="Nome: " id="" placeholder="Seu nome completo:" required>
+                        <input type="text" name="E-mail: " id="" placeholder="Seu e-mail:" required>
+                        <input type="text" name="Celular: " id="" placeholder="Seu celular:">
+                        <textarea name="" id="Mensagem: " placeholder="Sua mensagem" required></textarea>
+                        <div class="btn-enviar"><input type="submit" value="ENVIAR"></div>
+                    </form>
+                </div><!--fim interface-->
+            </section><!--fim formulario-->
+            <footer>
+                <div class="footer-content">
+                    <p>Copyright © 2024 - All Rights Reserved.</p>
+                </div>
+                <link rel="stylesheet"
+                    href="https://cdn.positus.global/production/resources/robbu/whatsapp-button/whatsapp-button.css">
+                <a id="robbu-whatsapp-button" class="right" target="_blank"
+                    href="https://api.whatsapp.com/send?phone=5511951923644">
+                    <div class="rwb-tooltip">Entre em contato!</div>
+                    <img src="https://cdn.positus.global/production/resources/robbu/whatsapp-button/whatsapp-icon.svg">
+                </a>
+            </footer>
+
+        </section>
     </main>
 </body>
+
 </html>

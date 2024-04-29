@@ -1,13 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="description" content="Projeto desenvolvido para aula de HTML - ADS 1ºD - 2024.">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!--GOOGLE FONTS--> 
+    <!--GOOGLE FONTS-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
     <!--FIM GOOGLE FONTS-->
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
@@ -16,19 +19,20 @@
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <title>PetLand</title>
 </head>
+
 <body>
-<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-        <nav class="menu-desktopcontato">
-            <ul>
-                <li><a class="smooth-scroll" href="index.html">Início</a></li>
-                <li><a class="smooth-scroll" href="sobre.html">Sobre</a></li>
-                <li><a class="smooth-scroll" href="banhoetosa.html">Banho e tosa</a></li>
-                <li><a class="smooth-scroll" href="index.html#racoes">Rações</a></li>
-                <li><a class="smooth-scroll" href="index.html#brinquedos">Brinquedos</a></li>
-                <li><a class="smooth-scroll" href="index.html#roupas">Roupinhas</a></li>
-                <li><a class="smooth-scroll" href="contato.html">Contato</a></li>
-            </ul>
-        </nav><!--fim menu-desktop-->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <nav class="menu-desktopcontato">
+        <ul>
+            <li><a class="smooth-scroll" href="index.html">Início</a></li>
+            <li><a class="smooth-scroll" href="sobre.html">Sobre</a></li>
+            <li><a class="smooth-scroll" href="banhoetosa.html">Banho e tosa</a></li>
+            <li><a class="smooth-scroll" href="index.html#racoes">Rações</a></li>
+            <li><a class="smooth-scroll" href="index.html#brinquedos">Brinquedos</a></li>
+            <li><a class="smooth-scroll" href="index.html#roupas">Roupinhas</a></li>
+            <li><a class="smooth-scroll" href="contato.html">Contato</a></li>
+        </ul>
+    </nav><!--fim menu-desktop-->
     <section class="topo-do-site" id="topo-do-site">
         <div class="interface">
             <div class="flex">
@@ -39,60 +43,71 @@
             </div><!--fim flex-->
         </div><!--fim interface-->
     </section><!--fim topo-do-site-->
-<main>
+    <main>
 
-    <div class="container">
-        <div class="form-container">
-            <section class="formulario">
-                <section id="contato"></section><!--ADICIONADO AGORA-->
-                <div class="interface">
-                    <h2 class="titulo">FALE <span>CONOSCO.</span></h2>
-                    <form action="https://formspree.io/f/xoqglkrk" method="post">
-                        <input type="text" name="Nome: " id="" placeholder="Seu nome completo:" required>
-                        <input type="text" name="E-mail: " id="" placeholder="Seu e-mail:" required>
-                        <input type="text" name="Celular: " id="" placeholder="Seu celular:">
-                        <textarea name="" id="Mensagem: " placeholder="Sua mensagem" required></textarea>
-                        <div class="btn-enviar"><input type="submit" value="ENVIAR"></div>
-                    </form>
-                </div><!--fim interface-->
-            </section><!--fim formulario-->
-        </div>
-        <div class="mapa-redes-container">
-            <!-- Mapa com endereço -->
-            <div>
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d50307671.40116013!2d-28.55720946448467!3d39.682637824394156!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48761b96aff33f47%3A0x5488448160869752!2sMartell%20Imports%20Ltd.!5e0!3m2!1spt-BR!2sbr!4v1714350179380!5m2!1spt-BR!2sbr" width="700" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <div class="container">
+            <div class="form-container">
+                <section class="formulario">
+                    <section id="contato"></section><!--ADICIONADO AGORA-->
+                    <div class="interface">
+                        <h2 class="titulo">FALE <span>CONOSCO.</span></h2>
+                        <form action="https://formspree.io/f/xoqglkrk" method="post">
+                            <input type="text" name="Nome: " id="" placeholder="Seu nome completo:" required>
+                            <input type="text" name="E-mail: " id="" placeholder="Seu e-mail:" required>
+                            <input type="text" name="Celular: " id="" placeholder="Seu celular:">
+                            <textarea name="" id="Mensagem: " placeholder="Sua mensagem" required></textarea>
+                            <div class="btn-enviar"><input type="submit" value="ENVIAR"></div>
+                        </form>
+                    </div><!--fim interface-->
+                </section><!--fim formulario-->
             </div>
-            
-            <div class="redes-sociais">
-                <div class="texto">
-                    <h1 id="titulo">EN<span>DEREÇO</span></h1>
-                    <p>144, Eagle Yard Arch, Maldonado Walk, London SE1 6SP, Reino Unido</p>
+            <div class="mapa-redes-container">
+                <!-- Mapa com endereço -->
+                <div>
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d50307671.40116013!2d-28.55720946448467!3d39.682637824394156!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48761b96aff33f47%3A0x5488448160869752!2sMartell%20Imports%20Ltd.!5e0!3m2!1spt-BR!2sbr!4v1714350179380!5m2!1spt-BR!2sbr"
+                        width="700" height="400" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
                 </div>
-                <div class="icones">
-                    <a href="#" target="_blank"><i class="fab fa-facebook"></i></a>
-                    <a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
-                    <a href="#" target="_blank"><i class="fab fa-twitter"></i></a>
+
+                <div class="redes-sociais">
+                    <div class="texto">
+                        <h1 id="titulo">CONT<span>ATOS</span></h1>
+                        <p>144, Eagle Yard Arch, Maldonado Walk, London SE1 6SP, Reino Unido</p>
+                        <p>+341 898-463</p>
+                        <p>Isabela Leme Custódio - 37676318</p>
+                        <p>Maria Fernanda Custódio - 37650521</p>
+                        <p>Stefany Beacides - 37597540</p>
+
+                    </div>
+                    <div class="icones">
+                        <a href="#" target="_blank"><i class="fab fa-facebook"></i></a>
+                        <a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
+                        <a href="#" target="_blank"><i class="fab fa-twitter"></i></a>
+                    </div>
                 </div>
+
+
+
             </div>
-            
-            
 
         </div>
-        
-    </div>
-    
-    
-                                            
-                                            <footer>
-                                                <div class="footer-content">
-                                                  <p>Copyright © 2024 - All Rights Reserved.</p>
-                                                </div>
-                                                <link rel="stylesheet" href="https://cdn.positus.global/production/resources/robbu/whatsapp-button/whatsapp-button.css">
-                                        <a id="robbu-whatsapp-button" class="right" target="_blank" href="https://api.whatsapp.com/send?phone=5511951923644">
-                                          <div class="rwb-tooltip">Entre em contato!</div>
-                                          <img src="https://cdn.positus.global/production/resources/robbu/whatsapp-button/whatsapp-icon.svg">
-                                        </a>
-                                              </footer>
+
+
+
+        <footer>
+            <div class="footer-content">
+                <p>Copyright © 2024 - All Rights Reserved.</p>
+            </div>
+            <link rel="stylesheet"
+                href="https://cdn.positus.global/production/resources/robbu/whatsapp-button/whatsapp-button.css">
+            <a id="robbu-whatsapp-button" class="right" target="_blank"
+                href="https://api.whatsapp.com/send?phone=5511951923644">
+                <div class="rwb-tooltip">Entre em contato!</div>
+                <img src="https://cdn.positus.global/production/resources/robbu/whatsapp-button/whatsapp-icon.svg">
+            </a>
+        </footer>
     </main>
 </body>
+
 </html>
