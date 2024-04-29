@@ -10,7 +10,7 @@
 <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <!--FIM GOOGLE FONTS-->
     <link rel="stylesheet" href="style.css">
-    <link rel="icon" type="image/x-icon" href="assets/cao.ico">
+    <link rel="icon" type="image/x-icon" href="img/cao.ico">
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <title>PetLand</title>
 </head>
@@ -207,11 +207,12 @@ function redirecionarParaMercadoPago() {
         <nav class="menu-desktop">
             <ul>
                 <li><a class="smooth-scroll" href="#topo-do-site">Início</a></li>
-                <li><a class="smooth-scroll" href="#banhotosa">Banho e tosa</a></li>
+                <li><a class="smooth-scroll" href="sobre.html">Sobre</a></li>
+                <li><a class="smooth-scroll" href="banhoetosa.html">Banho e tosa</a></li>
                 <li><a class="smooth-scroll" href="#racoes">Rações</a></li>
                 <li><a class="smooth-scroll" href="#brinquedos">Brinquedos</a></li>
                 <li><a class="smooth-scroll" href="#roupas">Roupinhas</a></li>
-                <li><a class="smooth-scroll" href="#contato">Contato</a></li>
+                <li><a class="smooth-scroll" href="contato.html">Contato</a></li>
             </ul>
         </nav><!--fim menu-desktop-->
     <section class="topo-do-site" id="topo-do-site">
@@ -232,72 +233,16 @@ function redirecionarParaMercadoPago() {
     </section><!--fim topo-do-site-->
 </div>
 <main>
-        <section class="banhotosa">
-            <div  class="interface">
-                <br>
-                <h2  id="banhotosa" class="titulo">BANHO E TOSA</h2>
-                <div class="flex">
-                    <div class="banho_tosa">
-                        <h3>Modalidades e valores</h3><br>
-                        <table cellspacing="0" cellpadding="10px">
-                            <tr>
-                                <th rowspan="2">Serviço</th>
-                                <th colspan="3">Valores</th>
-                            </tr>
-                            <tr>
-                                <th>Porte pequeno</th>
-                                <th>Porte médio</th>
-                                <th>Porte grande</th>
-                            </tr>
-                            <tr>
-                                <td>Banho</td>
-                                <td>R$ 50,00</td>
-                                <td>R$ 70,00</td>
-                                <td>R$ 100,00</td>
-                            </tr>
-                            <tr>
-                                <td>Banho + tosa higiênica</td>
-                                <td>R$ 80,00</td>
-                                <td>R$ 100,00</td>
-                                <td>R$ 130,00</td>
-                            </tr>
-                            <tr>
-                                <td>Banho + tosa</td>
-                                <td>R$ 110,00</td>
-                                <td>R$ 130,00</td>
-                                <td>R$ 160,00</td>
-                            </tr>
-                            <tr>
-                                <td>Tosa higiênica</td>
-                                <td>R$ 30,00</td>
-                                <td>R$ 60,00</td>
-                                <td>R$ 90,00</td>
-                            </tr>
-                            <tr>
-                                <td>Tosa</td>
-                                <td>R$ 60,00</td>
-                                <td>R$ 90,00</td>
-                                <td>R$ 120,00</td>
-                            </tr>
-                        </table>
-                          <div style="padding-top: 10%" class="btn-comprar"> 
-                            <a>
-                                <button onclick="abrirModal()" class="button">Agende</button><br><br><br><br>
-                            </a>
-                        </div><!--fim btn-comprar-->
-                    </div><!--fim tabela banho e tosa-->
-                </section>
                     <section class="racoes">
                         <div  class="interface">
                             <h2  id="racoes" class="titulo">RAÇÕES</h2><br>
                                 <div class="flex">
                                 <div class="racoes-box">
-                                    <i class="bi bi-1-circle"></i>
                                     <h3>Golden Light</h3>
                                     <p>Ideal para controle de peso em câes de porte pequeno.</p><br>
                                     <p><b>R$ 130,49</b></p><br>
                                          <div class="img-racao">
-                                            <img src="assets/racao_golden.jpg" alt="Imagem ração Golden Light" width="200" height="200">
+                                            <img src="img/racao_golden.jpg" alt="Imagem ração Golden Light" width="200" height="200">
                                         </div>
                                         <div style="padding-top: 10%" class="btn-comprar"> 
                                             <a>
@@ -306,12 +251,11 @@ function redirecionarParaMercadoPago() {
                                         </div><!--fim btn-comprar-->
                                 </div><!-- fim racoes-box-->
                                 <div class="racoes-box">
-                                    <i class="bi bi-1-circle"></i>
                                     <h3>Premier</h3>
                                     <p>Rica em ômega 3 e proteínas de altíssima qualidade, essa ração é ideal para cães adultos de porte médio.</p><br>
                                     <p><b>R$ 254,90</b></p><br>
                                         <div class="img-racao">
-                                            <img src="assets/racao_premier.png" alt="Imagem ração Premier" width="200" height="200">
+                                            <img src="img/racao_premier.png" alt="Imagem ração Premier" width="200" height="200">
                                         </div>
                                         <div style="padding-top: 10%" class="btn-comprar"> 
                                             <a>
@@ -320,12 +264,11 @@ function redirecionarParaMercadoPago() {
                                         </div><!--fim btn-comprar-->
                                 </div><!--fim racoes-box-->
                                 <div class="racoes-box">
-                                    <i class="bi bi-1-circle"></i>
                                     <h3>Ração Golden Special</h3>
                                     <p>Essa ração indicada para gatos adultos é um ótimo aliado para reduzir o odor das fezes do seu amigo.</p><br>
                                     <p><b>R$ 134,91</b></p><br>
                                         <div class="img-racao">
-                                            <img src="assets/racao_gato.png" alt="Imagem ração gato" width="200" height="210">
+                                            <img src="img/racao_gato.png" alt="Imagem ração gato" width="200" height="210">
                                         </div>
                                         <div style="padding-top: 10%" class="btn-comprar"> 
                                             <a>
@@ -341,7 +284,6 @@ function redirecionarParaMercadoPago() {
                                 <h2  id="brinquedos" class="titulo">BRINQUEDOS</h2><br>
                                     <div class="flex">
                                         <div class="brinquedos-box">
-                                            <i class="bi bi-1-circle"></i>
                                             <h3>Brinquedo Mordedor Galinha para Cães</h3>
                                             <p>- Indicado para cães;<br>
                                                 - Esse mordedor vai fazer o pet se entreter por horas;<br>
@@ -349,7 +291,7 @@ function redirecionarParaMercadoPago() {
                                                 - Disponível nos tamanhos P, G e GG.</p><br>
                                                 <p><b>R$ 34,99</b></p><br>
                                                 <div class="img-brinquedos">
-                                                    <img src="assets/galinha_borracha.jpg" alt="Imagem galinha de borracha" width="200" height="200">
+                                                    <img src="img/galinha_borracha.jpg" alt="Imagem galinha de borracha" width="200" height="200">
                                                 </div>
                                                 <div style="padding-top: 10%" class="btn-comprar"> 
                                                     <a>
@@ -358,7 +300,6 @@ function redirecionarParaMercadoPago() {
                                                     </div><!--fim btn-comprar-->
                                             </div><!-- fim brinquedos-box-->
                                             <div class="brinquedos-box">
-                                                <i class="bi bi-1-circle"></i>
                                                 <h3>Brinquedo Bola Cravo para Cães - Cores Sortidas</h3>
                                                 <p>- Indicado para cães;<br>
                                                     - Ideal para divertir seu pet;<br>
@@ -368,7 +309,7 @@ function redirecionarParaMercadoPago() {
                                                     - Disponível nos tamanhos P, G e GG.</p><br>
                                                     <p><b>R$ 19,95</b></p><br>
                                                     <div class="img-brinquedos">
-                                                        <img src="assets/bolinha_borracha.jpg" alt="Imagem bolinhas de borracha" width="200" height="200">
+                                                        <img src="img/bolinha_borracha.jpg" alt="Imagem bolinhas de borracha" width="200" height="200">
                                                     </div>
                                                     <div style="padding-top: 10%" class="btn-comprar"> 
                                                         <a>
@@ -377,7 +318,6 @@ function redirecionarParaMercadoPago() {
                                                     </div><!--fim btn-comprar-->
                                             </div><!-- fim brinquedos-box-->
                                             <div class="brinquedos-box">
-                                                <i class="bi bi-1-circle"></i>
                                                 <h3>Arranhador de Rampa Furacão Pet para gatos</h3>
                                                 <p>- Indicado para gatos;<br>
                                                     - Previne o estrago de móveis e utensílios de sua casa;<br>
@@ -385,7 +325,7 @@ function redirecionarParaMercadoPago() {
                                                     - Contém: 01 Arranhador duplo e 02 Bolinhas plásticas.</p><br>
                                                     <p><b>R$ 99,90</b></p><br>
                                                     <div class="img-brinquedos">
-                                                        <img src="assets/arranhador_gato.jpg" alt="Imagem arrranhador" width="200" height="200">
+                                                        <img src="img/arranhador_gato.jpg" alt="Imagem arrranhador" width="200" height="200">
                                                     </div>
                                                     <div style="padding-top: 10%" class="btn-comprar"> 
                                                         <a>
@@ -401,7 +341,6 @@ function redirecionarParaMercadoPago() {
                                                 <h2  id="roupas" class="titulo">ROUPINHAS</h2><br>
                                                 <div class="flex">
                                                     <div class="roupas-box">
-                                                        <i class="bi bi-1-circle"></i>
                                                         <h3>Capa de Chuva para Cães - Cores Sortidas</h3>
                                                         <p>- Indicada para cães;<br>
                                                             - Os dias de chuva não serão mais um problema;<br>
@@ -411,7 +350,7 @@ function redirecionarParaMercadoPago() {
                                                             - Disponível em embalagem com 1 unidade.</p><br>
                                                             <p><b>R$ 110,29</b></p><br>
                                                             <div class="img-roupas">
-                                                                <img src="assets/capa_chuva.jpg" alt="Imagem capa de chuva" width="200" height="200">
+                                                                <img src="img/capa_chuva.jpg" alt="Imagem capa de chuva" width="200" height="200">
                                                             </div>
                                                             <div style="padding-top: 10%" class="btn-comprar"> 
                                                                 <a>
@@ -420,7 +359,6 @@ function redirecionarParaMercadoPago() {
                                                                 </div><!--fim btn-comprar-->
                                                         </div><!-- fim brinquedos-box-->
                                                         <div class="roupas-box">
-                                                            <i class="bi bi-1-circle"></i>
                                                             <h3>Botinha de Borracha para Cães - Cores Sortidas</h3>
                                                             <p>- Indicada para cães;<br>
                                                                 - Antiderrapante;<br>
@@ -433,7 +371,7 @@ function redirecionarParaMercadoPago() {
                                                                 - Disponível em embalagem com 4 unidades.</p><br>
                                                                 <p><b>R$ 54,90</b></p><br>
                                                                 <div class="img-roupas">
-                                                                    <img src="assets/botinha_borracha.jpg" alt="Imagem botinha de borracha" width="200" height="200">
+                                                                    <img src="img/botinha_borracha.jpg" alt="Imagem botinha de borracha" width="200" height="200">
                                                                 </div>
                                                                 <div style="padding-top: 10%" class="btn-comprar"> 
                                                                     <a>
@@ -442,7 +380,6 @@ function redirecionarParaMercadoPago() {
                                                                 </div><!--fim btn-comprar-->
                                                         </div><!-- fim roupas-box-->
                                                         <div class="roupas-box">
-                                                            <i class="bi bi-1-circle"></i>
                                                             <h3>Fantasia Juba de Leão Cansei de Ser Gato</h3>
                                                             <p>- Indicada para gatos;<br>
                                                                 - Seu gato também cansou de ser gato? Ele pode virar um leão;<br>
@@ -452,7 +389,7 @@ function redirecionarParaMercadoPago() {
                                                                 - Disponível em embalagem com 1 unidade.</p><br>
                                                                 <p><b>R$ 69,90</b></p><br>
                                                                 <div class="img-roupas">
-                                                                    <img src="assets/fantasia_juba.jpg" alt="Imagem fantasia juda leão" width="200" height="200">
+                                                                    <img src="img/fantasia_juba.jpg" alt="Imagem fantasia juda leão" width="200" height="200">
                                                                 </div>
                                                                 <div style="padding-top: 10%" class="btn-comprar"> 
                                                                     <a>

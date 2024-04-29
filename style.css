@@ -119,6 +119,8 @@ section.topo-do-site .flex{
     color: #ffffff;
     font-size: 42px;
     line-height: 40px;
+    text-align: center;
+
 }
 
 .topo-do-site .txt-topo-site h1 span{
@@ -127,8 +129,22 @@ section.topo-do-site .flex{
 
 .topo-do-site .txt-topo-site p{
     color: #ffffff;
-    margin: 40px 0;
+    margin: 20px auto; /* Margem automática nas laterais para centralizar */
+    text-align: center; /* Justificar o texto */
+    max-width: 500px; /* Largura máxima para manter o texto centralizado */
 }
+
+.topo-do-site .txt-topo-sitecontato h1 span{
+    color: #ff6eca;
+}
+
+.topo-do-site .txt-topo-sitecontato p{
+    color: #000000;
+    margin: 20px auto; /* Margem automática nas laterais para centralizar */
+    text-align: center; /* Justificar o texto */
+    max-width: 500px; /* Largura máxima para manter o texto centralizado */
+}
+
 
 .topo-do-site .img-topo-site img{
     position: relative;
@@ -314,8 +330,8 @@ html{
 .header-with-bg {
     position: relative;
     width: 100%;
-    height: 700px;
-    background-image: url('assets/fundo.jpg');
+    height: 800px;
+    background-image: url('img/fundo.jpg');
     background-size: cover;
     background-position: center;
 }
@@ -338,7 +354,7 @@ html{
     left: 0;
     width: 100%;
     height: 100%;
-    background-image: url('assets/fundo.jpg'); /* Substitua pelo caminho da sua imagem escura */
+    background-image: url('img/fundo.jpg'); /* Substitua pelo caminho da sua imagem escura */
     background-size: cover;
     background-position: center;
     z-index: -1;
@@ -350,7 +366,20 @@ html{
     text-align: right;
 }
 
+
+.menu-desktopcontato {
+    background-color: rgba(255, 228, 247, 0.5); /* Cor de fundo escura com transparência */
+    padding: 30px 70px; /* Adicione espaçamento interno ao menu */
+    text-align: right;
+}
+
 .menu-desktop ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.menu-desktopcontato ul {
     list-style: none;
     margin: 0;
     padding: 0;
@@ -361,7 +390,16 @@ html{
     margin-right: 20px; /* Espaçamento entre os itens do menu */
 }
 
+.menu-desktopcontato ul li {
+    display: inline-block; /* Para que os itens do menu fiquem lado a lado */
+    margin-right: 20px; /* Espaçamento entre os itens do menu */
+}
+
 .menu-desktop ul li:last-child {
+    margin-right: 0; /* Remove o espaçamento direito do último item do menu */
+}
+
+.menu-desktopcontato ul li:last-child {
     margin-right: 0; /* Remove o espaçamento direito do último item do menu */
 }
 
@@ -373,7 +411,19 @@ html{
     transition: opacity 0.3s ease;
 }
 
+.menu-desktopcontato ul li a {
+    text-decoration: none;
+    color: #000000; /* Cor do texto */
+    font-size: 16px;
+    opacity: 0.8;
+    transition: opacity 0.3s ease;
+}
+
 .menu-desktop ul li a:hover {
+    opacity: 1;
+}
+
+.menu-desktopcontato ul li a:hover {
     opacity: 1;
 }
 
@@ -490,5 +540,93 @@ footer .line-footer p{
 .spacer {
     height: 90px;
 }
+
+#titulo {
+    text-align: center;
+    color: #000000;
+}
+.container {
+    display: flex;
+}
+
+.form-container {
+    flex: 1;
+    margin-right: 10px; /* Espaço entre os elementos */
+}
+
+.mapa-redes-container {
+    flex: 1;
+}
+
+.mapa-redes-container #map {
+    height: 200px; /* Altura do mapa, ajuste conforme necessário */
+    background-color: #f2f2f2; /* Cor de fundo temporária para o mapa */
+}
+
+.mapa-redes-container {
+    position: relative;
+}
+
+#map {
+    height: 400px;
+    width: 100%;
+}
+
+.redes-sociais i {
+    font-size: 50px; /* Tamanho do ícone */
+    color: #000; /* Cor do ícone */
+    margin: 0 10px; /* Espaçamento entre os ícones */
+    align-items: center;
+
+}
+.redes-sociais {
+    position: absolute;
+    bottom: 40px; /* Ajuste a distância do fundo conforme necessário */
+    left: 50%; /* Centralize horizontalmente */
+    transform: translateX(-50%); /* Corrija a centralização */
+    display: flex; /* Usando flexbox */
+    align-items: center; /* Centralize verticalmente */
+    width: 80%; /* Defina a largura para 80% da largura da tela */
+    max-width: 800px; /* Defina uma largura máxima para evitar que a div fique muito grande em telas grandes */
+    justify-content: space-between; /* Distribua os elementos uniformemente ao longo do eixo principal */
+}
+
+
+.texto {
+    margin-right: 20px; /* Espaçamento entre o texto e os ícones */
+    width: 50%; /* Defina a largura da div para 50% da largura da tela */
+    text-align: center;
+}
+
+.texto h1,
+.texto p {
+    margin: 0; /* Remova as margens padrão */
+    text-align: center;
+}
+
+.icones {
+    display: flex; /* Usando flexbox para os ícones ficarem um ao lado do outro */
+    color: #ff6eca; /* Cor do ícone */
+
+}
+
+.icones a {
+    font-size: 50px; /* Tamanho do ícone */
+    color: #ff6eca; /* Cor do ícone */
+    margin-right: 10px; /* Espaçamento entre os ícones */
+}
+
+.texto span{
+    color: #ff6eca;
+}
+.redes-sociais a i {
+    color: #ff6eca; /* Define a cor dos ícones */
+}
+
+
+
+
+
+
 
 
