@@ -145,6 +145,17 @@ section.topo-do-site .flex{
     max-width: 500px; /* Largura máxima para manter o texto centralizado */
 }
 
+.topo-do-site .txt-topo-sitesobre h1 span{
+    color: #ff6eca;
+}
+
+.topo-do-site .txt-topo-sitesobre p{
+    color: #ffffff;
+    margin: 20px auto; /* Margem automática nas laterais para centralizar */
+    text-align: center; /* Justificar o texto */
+    max-width: 500px; /* Largura máxima para manter o texto centralizado */
+}
+
 
 .topo-do-site .img-topo-site img{
     position: relative;
@@ -622,9 +633,6 @@ footer .line-footer p{
 .redes-sociais a i {
     color: #ff6eca; /* Define a cor dos ícones */
 }
-
-
-
 
 
 
